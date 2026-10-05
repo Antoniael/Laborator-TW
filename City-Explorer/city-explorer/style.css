@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #5b3fd9;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+form label {
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 0.6rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+#destinatii {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+article {
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+article.featured {
+    border: 2px solid #5b3fd9;
+    background-color: #f3f0ff;
+}
+
+article:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+input:focus, 
+select:focus {
+    outline: 2px solid #5b3fd9;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>City Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="#destinatii">Destinații</a></li>
+                <li><a href="#planifica">Planifică</a></li>
+                <li><a href="#recomandari">Recomandări</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinatii">
+            <h2>Destinații</h2>
+            
+            <article>
+                <h3>Paris</h3>
+                <p><strong>Țara:</strong> Franța</p>
+                <p>Orașul luminilor și al iubirii, cunoscut pentru Turnul Eiffel, Luvru și atmosfera romantică de pe malurile Senei.</p>
+                <p><strong>Durata recomandată a vizitei:</strong> 4 zile</p>
+            </article>
+
+            <article>
+                <h3>Roma</h3>
+                <p><strong>Țara:</strong> Italia</p>
+                <p>O adevărată capitală istorică în aer liber, plină de ruine antice, Colosseum, Vatican și delicioasa gastronomie italiană.</p>
+                <p><strong>Durata recomandată a vizitei:</strong> 3 zile</p>
+            </article>
+
+            <article>
+                <h3>Barcelona</h3>
+                <p><strong>Țara:</strong> Spania</p>
+                <p>Un amestec unic de arhitectură modernistă semnată de Antoni Gaudí, plaje însorite și o viață vibrantă pe Las Ramblas.</p>
+                <p><strong>Durata recomandată a vizitei:</strong> 3 zile</p>
+            </article>
+
+            <article class="featured">
+                <h3>Praga</h3>
+                <p><strong>Țara:</strong> Cehia</p>
+                <p>Orașul celor o sută de clopotnițe, faimos pentru Podul Carol, Castelul din Praga și centrul său istoric extrem de bine conservat.</p>
+                <p><strong>Durata recomandată a vizitei:</strong> 2 zile</p>
+            </article>
+
+            <article>
+                <h3>Lisabona</h3>
+                <p><strong>Țara:</strong> Portugalia</p>
+                <p>Capitala pitorească de pe malul Atlanticului, renumită pentru tramvaiele sale galbene, străzile abrupte și muzica fado.</p>
+                <p><strong>Durata recomandată a vizitei:</strong> 3 zile</p>
+            </article>
+        </section>
+
+        <section id="planifica">
+            <h2>Planifică</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="nume">Nume:</label>
+                    <input type="text" id="nume" name="nume" required>
+                </div>
+
+                <div>
+                    <label for="destinatie">Destinație:</label>
+                    <select id="destinatie" name="destinatie" required>
+                        <option value="" disabled selected>Alege...</option>
+                        <option value="paris">Paris</option>
+                        <option value="roma">Roma</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="praga">Praga</option>
+                        <option value="lisabona">Lisabona</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="zile">Număr de zile:</label>
+                    <input type="number" id="zile" name="zile" min="1" required>
+                </div>
+
+                <div>
+                    <button type="submit">Planifică excursia</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="recomandari">
+            <h2>Recomandări</h2>
+            <ul>
+                <li>Verifică valabilitatea actelor de identitate și a pașaportului cu cel puțin câteva luni înainte de plecare.</li>
+                <li>Rezervă biletele pentru principalele obiective turistice (cum ar fi Colosseumul sau Turnul Eiffel) online și din timp pentru a evita cozile uriașe.</li>
+                <li>Nu rata gustarea preparatelor și a specialităților culinare locale specifice orașului pe care îl vizitezi.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Autor: Voicescu Antonia | Anul: 2026</p>
+    </footer>
+
+</body>
+</html>
